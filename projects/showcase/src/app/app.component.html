@@ -1,0 +1,22 @@
+<div>
+  Testing the component
+  <div>
+    Casual:
+    <ngx-slow-type text="Hello, world!"></ngx-slow-type>
+  </div>
+
+  <div>
+    Without cursor:
+    <ngx-slow-type text="Without cursor!" [cursor]="false"></ngx-slow-type>
+  </div>
+
+  <div>
+    Fast typing:
+    <ngx-slow-type text="I have typed this very fast!" [debounceTime]="60"></ngx-slow-type>
+  </div>
+
+  <div>
+    Allow editing:
+    <ngx-slow-type text="You can try to change this input!" [editable]="true"></ngx-slow-type>
+  </div>
+</div>

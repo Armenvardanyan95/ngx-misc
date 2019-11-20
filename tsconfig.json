@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "slow-type": [
+        "dist/slow-type"
+      ],
+      "slow-type/*": [
+        "dist/slow-type/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
