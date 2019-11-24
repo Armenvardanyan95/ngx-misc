@@ -24,6 +24,12 @@
       ],
       "slow-type/*": [
         "dist/slow-type/*"
+      ],
+      "running-text": [
+        "dist/running-text"
+      ],
+      "running-text/*": [
+        "dist/running-text/*"
       ]
     }
   },

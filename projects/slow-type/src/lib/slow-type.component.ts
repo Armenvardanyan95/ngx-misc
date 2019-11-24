@@ -3,7 +3,7 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 @Component({
   selector: 'ngx-slow-type',
   template: `
-    <span [contentEditable]="">{{ typedText }}</span>
+    <span [contentEditable]="editable">{{ typedText }}</span>
     <span *ngIf="cursor">{{ cursorChar }}</span>
   `,
 })
@@ -31,7 +31,7 @@ export class SlowTypeComponent implements OnInit, OnDestroy {
 
         type(index + 1, Math.random() * this.debounceTime);
       }, timeout);
-    }
+    };
 
     type(0, 0);
     if (this.cursor) {
