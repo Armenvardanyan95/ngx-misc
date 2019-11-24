@@ -1,24 +1,48 @@
-# SlowType
+# @ngx-misc/slow-type
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+Small Angular component for a slow text typing animation
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project slow-type` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project slow-type`.
-> Note: Don't forget to add `--project slow-type` or else it will be added to the default project in your `angular.json` file. 
+You can install this component using `npm`
 
-## Build
+```npm install @ngx-misc/slow-type```
 
-Run `ng build slow-type` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
 
-## Publishing
+Import the `SlowType` module into one of your Angular modules
 
-After building your library with `ng build slow-type`, go to the dist folder `cd dist/slow-type` and run `npm publish`.
+```
+import { SlowTypeModule } from '@ngx-misc/slow-type'; 
+// your code
 
-## Running unit tests
+@NgModule({
+  imports: [SlowTypeModule]
+})
+export class MyModule {}
+```
 
-Run `ng test slow-type` to execute the unit tests via [Karma](https://karma-runner.github.io).
+And just drop the component in your template:
 
-## Further help
+```
+<ngx-slow-type text="Hello, world!"></ngx-slow-type>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Note: the `text` parameter is required
+
+## Options
+
+You can customize how the `SlowTypeComponent` works using some inputs:
+
+| Input        | Description                                                                                                                      | Type                  | Default Value |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------|-----------------------|---------------|
+| cursor       | Whether to show the blinking typing cursor                                                                                       | boolean               | true          |
+| debounceTime | The range of time (in ms) in which the letters will be added to the screen.  Smaller values mean faster typing                   | number (milliseconds) | 700           |
+| editable     | Whether the inputted text can be then edited  by the user. Sets the `contentEditable` property of the underlying `span` element. | boolean               | false         |
+
+
+## Contribute
+
+If you like `@ngx-misc` or this component in particular, you are welcome to contribute!
+
+Visit our [GitHub repository](https://github.com/Armenvardanyan95/ngx-misc) for more information.

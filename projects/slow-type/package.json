@@ -1,6 +1,20 @@
 {
-  "name": "slow-type",
-  "version": "0.0.1",
+  "name": "@ngx-misc/slow-type",
+  "description": "Small Angular component for a slow text typing animation",
+  "keywords": [
+    "animation",
+    "typing",
+    "angular",
+    "ngx-misc",
+    "slow typing",
+    "ngx",
+    "ng"
+  ],
+  "homepage": "https://github.com/Armenvardanyan95/ngx-misc/tree/master/projects/slow-type",
+  "version": "1.0.0",
+  "author": "Armen Vardanyan",
+  "license": "MIT",
+  "private": false,
   "peerDependencies": {
     "@angular/common": "^8.2.0",
     "@angular/core": "^8.2.0"
